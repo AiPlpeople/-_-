@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>25.8kV 폐쇄배전반 | 수배전반 - (주)이엔에스일렉트릭</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Header / GNB -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-logo" aria-label="이엔에스일렉트릭 홈">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 3L23.5 14.5L34 9L26.5 18.5L37 20L26.5 21.5L34 31L23.5 25.5L20 37L16.5 25.5L6 31L13.5 21.5L3 20L13.5 18.5L6 9L16.5 14.5L20 3Z" fill="url(#logoGrad)"/>
+            <path d="M14 12V28M14 20H25" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="3" y1="3" x2="37" y2="37" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00A3FF"/>
+                <stop offset="1" stop-color="#0055B3"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-corp">(주)</span>이엔에스일렉트릭
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./ceo.html" class="nav-link">회사소개</a>
+            <div class="dropdown-menu">
+              <a href="./ceo.html">인사말</a>
+              <a href="./history.html">연혁</a>
+              <a href="./certifications.html">기술력 및 인증서</a>
+              <a href="./clients.html">주요고객사</a>
+              <a href="./welfare.html">복리후생</a>
+              <a href="./locations.html">사업장소개</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./esg.html" class="nav-link">ESG경영</a>
+            <div class="dropdown-menu">
+              <a href="./esg.html">ESG 경영</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./biz-switchgear.html" class="nav-link active">사업분야</a>
+            <div class="dropdown-menu has-flyout">
+              <div class="dropdown-item-wrap">
+                <a href="./biz-switchgear.html" class="active">수배전반</a>
+                <div class="flyout-menu">
+                  <a href="./biz-sw-smart.html">스마트 안전 배전반</a>
+                  <a href="./biz-sw-25kv.html" class="active">25.8kV 폐쇄배전반</a>
+                  <a href="./biz-sw-7kv.html">7.2kV 폐쇄배전반</a>
+                  <a href="./biz-sw-480v.html">480V 저압배전반</a>
+                  <a href="./biz-sw-mcc.html">전동기제어반 (일반 MCC)</a>
+                  <a href="./biz-sw-imcc.html">전동기제어반 (Intelligent MCC)</a>
+                  <a href="./biz-sw-panel.html">분전반</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-gis.html">가스절연개폐장치</a>
+                <div class="flyout-menu">
+                  <a href="./biz-gis-25egis.html">25.8kV EGIS (한전용)</a>
+                  <a href="./biz-gis-ecgis.html">25.8kV EC-GIS (민/관수용)</a>
+                  <a href="./biz-gis-29egis.html">29kV EGIS (철도용)</a>
+                  <a href="./biz-gis-ugswitch.html">에폭시절연 지중용부하개폐기</a>
+                  <a href="./biz-gis-ohswitch.html">에폭시절연 가공용부하개폐기</a>
+                  <a href="./biz-gis-recloser.html">리클로저</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-railway.html">철도용관제</a>
+                <div class="flyout-menu">
+                  <a href="./biz-rail-smart.html">스마트급전 시스템</a>
+                  <a href="./biz-rail-panel.html">전철제어반</a>
+                  <a href="./biz-rail-cu.html">CU</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-busduct.html">부스닥트</a>
+                <div class="flyout-menu">
+                  <a href="./biz-bus-hv.html">고압부스닥트</a>
+                  <a href="./biz-bus-lv.html">저압부스닥트</a>
+                  <a href="./biz-bus-dc.html">DC부스닥트</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-ess.html">ESS&amp;태양광</a>
+                <div class="flyout-menu">
+                  <a href="./biz-ess-allinone.html">All in one ESS</a>
+                  <a href="./biz-ess-emeg.html">EMEG (PV통합발전 솔루션)</a>
+                  <a href="./biz-ess-monitoring.html">ESS Monitoring Service</a>
+                  <a href="./biz-ess-epms.html">ePMS (EMS+PMS)</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-system.html">시스템솔루션</a>
+                <div class="flyout-menu">
+                  <a href="./biz-sys-temp.html">무선 온도감시 시스템</a>
+                  <a href="./biz-sys-remote.html">열화감시 원격모니터링 시스템</a>
+                  <a href="./biz-sys-enclosure.html">함체관리 시스템</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-construction.html">전기/정보통신공사업</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./rnd-institute.html" class="nav-link">R&amp;D분야</a>
+            <div class="dropdown-menu">
+              <a href="./rnd-institute.html">기업부설연구소</a>
+              <a href="./rnd-patents.html">보유 인증 및 특허</a>
+              <a href="./rnd-tech.html">핵심 전력기술</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#support" class="nav-link">고객지원</a>
+            <div class="dropdown-menu">
+              <a href="./index.html#support">견적 및 기술문의</a>
+              <a href="./index.html#support">카탈로그·자료실</a>
+              <a href="./index.html#support">A/S 접수</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#pr" class="nav-link">미디어센터</a>
+            <div class="dropdown-menu">
+              <a href="./index.html#pr">기업소식</a>
+              <a href="./index.html#pr">주요 납품실적</a>
+              <a href="./index.html#pr">PR 영상·브로슈어</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="언어 선택">
+          <button type="button" class="lang-btn active">KR</button>
+          <span class="divider">/</span>
+          <button type="button" class="lang-btn">EN</button>
+        </div>
+        <a href="./index.html#support" class="btn btn-primary btn-sm">견적·기술문의</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Hero Visual -->
+  <section class="sub-hero">
+    <div class="sub-hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow-orb orb-1"></div>
+    </div>
+    <div class="container sub-hero-content">
+      <span class="sub-eyebrow">BUSINESS PORTFOLIO · 01 · 02</span>
+      <h1 class="sub-title">수배전반 ▶ 25.8kV 폐쇄배전반</h1>
+      <p class="sub-desc">특고압·고압·저압 수배전반부터 지능형 MCC 및 분전반까지 무결점 전력 분배 시스템을 공급합니다.</p>
+    </div>
+
+    <div class="sub-lnb">
+      <div class="container sub-lnb-inner">
+        <div class="breadcrumb">
+          <a href="./index.html" class="breadcrumb-home">⌂ 홈</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>사업분야</span>
+          <span class="breadcrumb-sep">/</span>
+          <a href="./biz-switchgear.html">수배전반</a>
+          <span class="breadcrumb-sep">/</span>
+          <strong>25.8kV 폐쇄배전반</strong>
+        </div>
+        <div class="sub-tabs">
+          <a href="./biz-switchgear.html" class="sub-tab active">수배전반</a>
+          <a href="./biz-gis.html" class="sub-tab">가스절연개폐장치</a>
+          <a href="./biz-railway.html" class="sub-tab">철도용관제</a>
+          <a href="./biz-busduct.html" class="sub-tab">부스닥트</a>
+          <a href="./biz-ess.html" class="sub-tab">ESS&amp;태양광</a>
+          <a href="./biz-system.html" class="sub-tab">시스템솔루션</a>
+          <a href="./biz-construction.html" class="sub-tab">전기/정보통신공사업</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="sub-main">
+    <div class="container">
+      <!-- Sub-category Quick Navigation Bar -->
+      <nav class="biz-subdetail-nav" aria-label="수배전반 세부 품목 이동">
+        <a href="./biz-switchgear.html" class="biz-subdetail-pill parent-link">← 수배전반 전체</a>
+        <a href="./biz-sw-smart.html" class="biz-subdetail-pill">스마트 안전 배전반</a>
+        <a href="./biz-sw-25kv.html" class="biz-subdetail-pill active">25.8kV 폐쇄배전반</a>
+        <a href="./biz-sw-7kv.html" class="biz-subdetail-pill">7.2kV 폐쇄배전반</a>
+        <a href="./biz-sw-480v.html" class="biz-subdetail-pill">480V 저압배전반</a>
+        <a href="./biz-sw-mcc.html" class="biz-subdetail-pill">전동기제어반 (일반 MCC)</a>
+        <a href="./biz-sw-imcc.html" class="biz-subdetail-pill">전동기제어반 (Intelligent MCC)</a>
+        <a href="./biz-sw-panel.html" class="biz-subdetail-pill">분전반</a>
+      </nav>
+
+      <!-- 1. 개요: Overview + 16:9 Facility Image Layout -->
+      <div class="ceo-lead-banner">
+        <div class="ceo-lead-text">
+          <div class="dcms-eyebrow-row">
+            <span class="sub-sec-tag">01 · OVERVIEW (개요)</span>
+            <span class="dcms-acronym-pill">IEC 62271-200 · METAL-CLAD</span>
+          </div>
+          <h2>
+            1. 개요<br />
+            <span class="text-gradient">25.8kV 폐쇄배전반</span>
+          </h2>
+          <ul class="dcms-overview-RichList">
+            <li>
+              <span class="dcms-check-icon" aria-hidden="true">✓</span>
+              <span><strong>IEC 62271-200</strong>에 준하는 내진/내아크 구조로 설계</span>
+            </li>
+            <li>
+              <span class="dcms-check-icon" aria-hidden="true">✓</span>
+              <span><strong>격실 구조로 분리</strong>되어 있어, 사고 확대를 방지</span>
+            </li>
+            <li>
+              <span class="dcms-check-icon" aria-hidden="true">✓</span>
+              <span>Utility 전력을 안정적으로 수전받아, <strong>고객이 신뢰성있고, 안전하게 전력을 사용할 수 있도록</strong> 제작되었습니다.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 16:9 Facility Image Placeholder Slot -->
+        <div class="biz-overview-media">
+          <div class="dcms-img-slot-box ratio-16-9">
+            <svg class="slot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="8.5" cy="8.5" r="1.8" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="slot-label">25.8kV 폐쇄배전반 시설물 이미지 영역 (16:9)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. 사양: Specification Table -->
+      <div class="sub-section-intro">
+        <span class="sub-sec-tag">02 · SPECIFICATIONS</span>
+        <h3>2. 사양</h3>
+        <p>25.8kV 폐쇄배전반(Main / Feeder)의 표준 정격 및 기술 사양입니다.</p>
+      </div>
+
+      <div class="biz-spec-table-card">
+        <div class="biz-spec-table-wrap">
+          <table class="biz-spec-table" aria-label="25.8kV 폐쇄배전반 상세 사양표">
+            <thead>
+              <tr>
+                <th scope="col" rowspan="2" class="col-item">항목</th>
+                <th scope="colgroup" colspan="2" class="col-group-head">25.8kV 폐쇄배전반</th>
+              </tr>
+              <tr>
+                <th scope="col" class="col-sub-head">Main</th>
+                <th scope="col" class="col-sub-head">Feeder</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">정격전압(kV)</th>
+                <td>25.8</td>
+                <td>25.8</td>
+              </tr>
+              <tr>
+                <th scope="row">정격전류(A)</th>
+                <td>1250</td>
+                <td>630</td>
+              </tr>
+              <tr>
+                <th scope="row">주파수(HZ)</th>
+                <td>50/60</td>
+                <td>50/60</td>
+              </tr>
+              <tr>
+                <th scope="row">상용주파 내전압(kV/1min)</th>
+                <td>60</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <th scope="row">뇌 임펄스내전압(kV)</th>
+                <td>125</td>
+                <td>125</td>
+              </tr>
+              <tr>
+                <th scope="row">단시간 전류(kA/sec)</th>
+                <td>25/3</td>
+                <td>25/3</td>
+              </tr>
+              <tr>
+                <th scope="row">보호등급</th>
+                <td>Up to IP54</td>
+                <td>Up to IP54</td>
+              </tr>
+              <tr>
+                <th scope="row">내아크 분류(kA/sec)</th>
+                <td>AFLR, 25/1</td>
+                <td>AFLR, 25/1</td>
+              </tr>
+              <tr>
+                <th scope="row">적용규격</th>
+                <td>IEC 62270-200</td>
+                <td>IEC 62270-200</td>
+              </tr>
+              <tr>
+                <th scope="row">치수(mm)</th>
+                <td>W:800*D:2000*H:2350</td>
+                <td>W:800*D:2000*H:2350</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 3. 인증서: 6 Certificate Image Slots -->
+      <div class="client-sector-block dcms-showcase-block">
+        <div class="dcms-showcase-header">
+          <div class="dcms-showcase-title-group">
+            <span class="sub-sec-tag">03 · CERTIFICATIONS</span>
+            <h3>3. 인증서</h3>
+          </div>
+        </div>
+
+        <div class="biz-cert-grid-6">
+          <div class="dcms-img-slot-box cert-grid-slot">
+            <svg class="slot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="8.5" cy="8.5" r="1.8" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="slot-label">인증서 이미지 01</span>
+          </div>
+
+          <div class="dcms-img-slot-box cert-grid-slot">
+            <svg class="slot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="8.5" cy="8.5" r="1.8" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="slot-label">인증서 이미지 02</span>
+          </div>
+
+          <div class="dcms-img-slot-box cert-grid-slot">
+            <svg class="slot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="8.5" cy="8.5" r="1.8" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="slot-label">인증서 이미지 03</span>
+          </div>
+
+          <div class="dcms-img-slot-box cert-grid-slot">
+            <svg class="slot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="8.5" cy="8.5" r="1.8" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="slot-label">인증서 이미지 04</span>
+          </div>
+
+          <div class="dcms-img-slot-box cert-grid-slot">
+            <svg class="slot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="8.5" cy="8.5" r="1.8" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="slot-label">인증서 이미지 05</span>
+          </div>
+
+          <div class="dcms-img-slot-box cert-grid-slot">
+            <svg class="slot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="8.5" cy="8.5" r="1.8" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="slot-label">인증서 이미지 06</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-text footer-logo">
+            <span class="logo-corp">(주)</span>이엔에스일렉트릭
+          </div>
+          <p class="footer-slogan">대한민국을 넘어 글로벌 기업으로 도약하는 전력·에너지 토탈 솔루션 파트너</p>
+        </div>
+        <div class="footer-links">
+          <a href="./ceo.html">회사소개</a>
+          <a href="./esg.html">ESG경영</a>
+          <a href="./biz-switchgear.html">사업분야</a>
+          <a href="./rnd-institute.html">R&amp;D분야</a>
+          <a href="./index.html#support">고객지원</a>
+          <a href="./index.html#pr">미디어센터</a>
+          <a href="#contact" class="privacy-link">개인정보처리방침</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="company-info">
+          <p>상호명: 주식회사 이엔에스일렉트릭 (E&amp;S ELECTRIC CO., LTD.) | 대표번호: 고객지원센터 문의</p>
+          <p class="copyright">© 2026 E&amp;S ELECTRIC CO., LTD. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

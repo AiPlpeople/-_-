@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>리클로저 | 가스절연개폐장치 - (주)이엔에스일렉트릭</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Header / GNB -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-logo" aria-label="이엔에스일렉트릭 홈">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 3L23.5 14.5L34 9L26.5 18.5L37 20L26.5 21.5L34 31L23.5 25.5L20 37L16.5 25.5L6 31L13.5 21.5L3 20L13.5 18.5L6 9L16.5 14.5L20 3Z" fill="url(#logoGrad)"/>
+            <path d="M14 12V28M14 20H25" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="3" y1="3" x2="37" y2="37" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00A3FF"/>
+                <stop offset="1" stop-color="#0055B3"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-corp">(주)</span>이엔에스일렉트릭
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./ceo.html" class="nav-link">회사소개</a>
+            <div class="dropdown-menu">
+              <a href="./ceo.html">인사말</a>
+              <a href="./history.html">연혁</a>
+              <a href="./certifications.html">기술력 및 인증서</a>
+              <a href="./clients.html">주요고객사</a>
+              <a href="./welfare.html">복리후생</a>
+              <a href="./locations.html">사업장소개</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./esg.html" class="nav-link">ESG경영</a>
+            <div class="dropdown-menu">
+              <a href="./esg.html">ESG 경영</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./biz-switchgear.html" class="nav-link active">사업분야</a>
+            <div class="dropdown-menu has-flyout">
+              <div class="dropdown-item-wrap">
+                <a href="./biz-switchgear.html">수배전반</a>
+                <div class="flyout-menu">
+                  <a href="./biz-sw-smart.html">스마트 안전 배전반</a>
+                  <a href="./biz-sw-25kv.html">25.8kV 폐쇄배전반</a>
+                  <a href="./biz-sw-7kv.html">7.2kV 폐쇄배전반</a>
+                  <a href="./biz-sw-480v.html">480V 저압배전반</a>
+                  <a href="./biz-sw-mcc.html">전동기제어반 (일반 MCC)</a>
+                  <a href="./biz-sw-imcc.html">전동기제어반 (Intelligent MCC)</a>
+                  <a href="./biz-sw-panel.html">분전반</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-gis.html" class="active">가스절연개폐장치</a>
+                <div class="flyout-menu">
+                  <a href="./biz-gis-25egis.html">25.8kV EGIS (한전용)</a>
+                  <a href="./biz-gis-ecgis.html">25.8kV EC-GIS (민/관수용)</a>
+                  <a href="./biz-gis-29egis.html">29kV EGIS (철도용)</a>
+                  <a href="./biz-gis-ugswitch.html">에폭시절연 지중용부하개폐기</a>
+                  <a href="./biz-gis-ohswitch.html">에폭시절연 가공용부하개폐기</a>
+                  <a href="./biz-gis-recloser.html" class="active">리클로저</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-railway.html">철도용관제</a>
+                <div class="flyout-menu">
+                  <a href="./biz-rail-smart.html">스마트급전 시스템</a>
+                  <a href="./biz-rail-panel.html">전철제어반</a>
+                  <a href="./biz-rail-cu.html">CU</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-busduct.html">부스닥트</a>
+                <div class="flyout-menu">
+                  <a href="./biz-bus-hv.html">고압부스닥트</a>
+                  <a href="./biz-bus-lv.html">저압부스닥트</a>
+                  <a href="./biz-bus-dc.html">DC부스닥트</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-ess.html">ESS&amp;태양광</a>
+                <div class="flyout-menu">
+                  <a href="./biz-ess-allinone.html">All in one ESS</a>
+                  <a href="./biz-ess-emeg.html">EMEG (PV통합발전 솔루션)</a>
+                  <a href="./biz-ess-monitoring.html">ESS Monitoring Service</a>
+                  <a href="./biz-ess-epms.html">ePMS (EMS+PMS)</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-system.html">시스템솔루션</a>
+                <div class="flyout-menu">
+                  <a href="./biz-sys-temp.html">무선 온도감시 시스템</a>
+                  <a href="./biz-sys-remote.html">열화감시 원격모니터링 시스템</a>
+                  <a href="./biz-sys-enclosure.html">함체관리 시스템</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-construction.html">전기/정보통신공사업</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./rnd-institute.html" class="nav-link">R&amp;D분야</a>
+            <div class="dropdown-menu">
+              <a href="./rnd-institute.html">기업부설연구소</a>
+              <a href="./rnd-patents.html">보유 인증 및 특허</a>
+              <a href="./rnd-tech.html">핵심 전력기술</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#support" class="nav-link">고객지원</a>
+            <div class="dropdown-menu">
+              <a href="./index.html#support">견적 및 기술문의</a>
+              <a href="./index.html#support">카탈로그·자료실</a>
+              <a href="./index.html#support">A/S 접수</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#pr" class="nav-link">미디어센터</a>
+            <div class="dropdown-menu">
+              <a href="./index.html#pr">기업소식</a>
+              <a href="./index.html#pr">주요 납품실적</a>
+              <a href="./index.html#pr">PR 영상·브로슈어</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="언어 선택">
+          <button type="button" class="lang-btn active">KR</button>
+          <span class="divider">/</span>
+          <button type="button" class="lang-btn">EN</button>
+        </div>
+        <a href="./index.html#support" class="btn btn-primary btn-sm">견적·기술문의</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Hero Visual -->
+  <section class="sub-hero">
+    <div class="sub-hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow-orb orb-1"></div>
+    </div>
+    <div class="container sub-hero-content">
+      <span class="sub-eyebrow">BUSINESS PORTFOLIO · 02 · 06</span>
+      <h1 class="sub-title">가스절연개폐장치 ▶ 리클로저</h1>
+      <p class="sub-desc">절연 성능이 뛰어난 친환경·고체절연 밀폐 구조로 전력 및 철도 변전 계통의 완벽한 신뢰성을 보장합니다.</p>
+    </div>
+
+    <div class="sub-lnb">
+      <div class="container sub-lnb-inner">
+        <div class="breadcrumb">
+          <a href="./index.html" class="breadcrumb-home">⌂ 홈</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>사업분야</span>
+          <span class="breadcrumb-sep">/</span>
+          <a href="./biz-gis.html">가스절연개폐장치</a>
+          <span class="breadcrumb-sep">/</span>
+          <strong>리클로저</strong>
+        </div>
+        <div class="sub-tabs">
+          <a href="./biz-switchgear.html" class="sub-tab">수배전반</a>
+          <a href="./biz-gis.html" class="sub-tab active">가스절연개폐장치</a>
+          <a href="./biz-railway.html" class="sub-tab">철도용관제</a>
+          <a href="./biz-busduct.html" class="sub-tab">부스닥트</a>
+          <a href="./biz-ess.html" class="sub-tab">ESS&amp;태양광</a>
+          <a href="./biz-system.html" class="sub-tab">시스템솔루션</a>
+          <a href="./biz-construction.html" class="sub-tab">전기/정보통신공사업</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="sub-main">
+    <div class="container">
+      <!-- 2nd-Depth Detailed Subpage Navigation Bar -->
+      <div class="biz-subdetail-nav" aria-label="가스절연개폐장치 세부 품목 메뉴">
+        <a href="./biz-gis.html" class="biz-subdetail-pill">가스절연개폐장치 전체</a>
+        <a href="./biz-gis-25egis.html" class="biz-subdetail-pill">25.8kV EGIS (한전용)</a>
+        <a href="./biz-gis-ecgis.html" class="biz-subdetail-pill">25.8kV EC-GIS (민/관수용)</a>
+        <a href="./biz-gis-29egis.html" class="biz-subdetail-pill">29kV EGIS (철도용)</a>
+        <a href="./biz-gis-ugswitch.html" class="biz-subdetail-pill">에폭시절연 지중용부하개폐기</a>
+        <a href="./biz-gis-ohswitch.html" class="biz-subdetail-pill">에폭시절연 가공용부하개폐기</a>
+        <a href="./biz-gis-recloser.html" class="biz-subdetail-pill active">리클로저</a>
+      </div>
+
+      <!-- Top Product Overview -->
+      <div class="ceo-lead-banner">
+        <div class="ceo-lead-text">
+          <span class="section-eyebrow">AUTOMATIC CIRCUIT RECLOSER</span>
+          <h2 class="ceo-headline">
+            일시적 선로 고장을 스스로 복구하는 지능형 보호기기,<br />
+            <span>자동 재폐로 차단기 (리클로저)</span>
+          </h2>
+          <p class="ceo-greeting-intro">
+            배전선로에서 낙뢰, 수목 접촉 등으로 발생하는 순간적·일시적 고장 시 고장전류를 신속히 차단한 후 정해진 시퀀스에 따라 자동으로 재투입(Reclosing)하여 영구 정전을 예방하고, 영구 고장 시에는 구간을 확정 분리하는 핵심 보호장치입니다.
+          </p>
+        </div>
+        <div class="ceo-visual-card">
+          <div class="visual-graphic">
+            <div style="font-size: 3.4rem; margin-bottom: 12px;">🔄</div>
+            <div class="visual-caption">
+              <strong>배전선로 자동 재폐로 장치</strong>
+              <span>Smart Automatic Circuit Recloser</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Features -->
+      <div class="sub-section-intro">
+        <span class="section-eyebrow">KEY FEATURES &amp; ADVANTAGES</span>
+        <h2 class="section-title">리클로저 핵심 특장점</h2>
+        <p class="section-desc">이엔에스일렉트릭만의 정밀 엔지니어링과 철저한 품질 검증으로 완성된 핵심 기술력입니다.</p>
+      </div>
+
+      <div class="welfare-grid">
+        <div class="welfare-card">
+          <div class="welfare-icon">⚡</div>
+          <span class="welfare-cat">AUTO RECLOSING</span>
+          <h3>순간 고장 자동 복구 및 영구 고장 분리</h3>
+          <ul>
+            <li>고속 차단 후 다중 자동 재폐로(Fast/Delayed) 시퀀스로 일시 고장 즉시 해소</li>
+            <li>영구 고장 판정 시 락아웃(Lock-out) 차단으로 상위 변전소 정전 파급 방지</li>
+            <li>신재생에너지(태양광·풍력) 분산전원 연계 선로의 양방향 보호협조 지원</li>
+          </ul>
+        </div>
+
+        <div class="welfare-card">
+          <div class="welfare-icon">🧲</div>
+          <span class="welfare-cat">MAGNETIC ACTUATOR</span>
+          <h3>영구자석 조작기(PMA) 및 고체절연 기술</h3>
+          <ul>
+            <li>부품 수를 최소화한 영구자석 액추에이터(PMA) 적용으로 10,000회 이상 무보수 동작</li>
+            <li>진공인터럽터(VI)와 에폭시 고체절연 폴(Pole) 일체화로 뛰어난 절연·차단 성능</li>
+            <li>초고속 개극·투입 특성으로 아크 시간 단축 및 선로 설비 보호</li>
+          </ul>
+        </div>
+
+        <div class="welfare-card">
+          <div class="welfare-icon">💻</div>
+          <span class="welfare-cat">INTELLIGENT CONTROLLER</span>
+          <h3>디지털 제어함(RC)을 통한 스마트 계통 분석</h3>
+          <ul>
+            <li>과전류·지락·방향성 보호·주파수·전압 등 정밀 디지털 보호요소 내장</li>
+            <li>고장 파형(Oscillography) 및 이벤트 이력 대용량 저장·원격 전송</li>
+            <li>DNP3.0 / IEC 60870 / IEC 61850 통신으로 중앙 관제실 실시간 연동</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Specifications Summary -->
+      <div class="client-sector-block" style="margin-top: 40px;">
+        <div class="sector-head">
+          <span class="sector-badge">SPECIFICATIONS &amp; APPLICATIONS</span>
+          <h3>리클로저 주요 제원 및 적용 분야</h3>
+          <p>수요처의 현장 조건과 설계 규격에 맞춘 커스텀 엔지니어링 제작을 지원합니다.</p>
+        </div>
+        <div class="partner-grid">
+          <div class="partner-logo-box"><strong>정격 전압 / 차단전류</strong><span>25.8kV (또는 15kV~38kV) / 고신뢰 단락차단 용량</span></div>
+          <div class="partner-logo-box"><strong>조작 및 절연</strong><span>영구자석 조작기(PMA) · 진공차단(VI) · 고체절연</span></div>
+          <div class="partner-logo-box"><strong>주요 기능</strong><span>다회 재폐로 · 양방향 보호협조 · 전력품질/고장파형 기록</span></div>
+          <div class="partner-logo-box"><strong>적용 분야</strong><span>배전선로 분기점 · 태양광/풍력 계통연계점 · 대규모 플랜트 인입</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-text footer-logo">
+            <span class="logo-corp">(주)</span>이엔에스일렉트릭
+          </div>
+          <p class="footer-slogan">대한민국을 넘어 글로벌 기업으로 도약하는 전력·에너지 토탈 솔루션 파트너</p>
+        </div>
+        <div class="footer-links">
+          <a href="./ceo.html">회사소개</a>
+          <a href="./esg.html">ESG경영</a>
+          <a href="./biz-switchgear.html">사업분야</a>
+          <a href="./rnd-institute.html">R&amp;D분야</a>
+          <a href="./index.html#support">고객지원</a>
+          <a href="./index.html#pr">미디어센터</a>
+          <a href="#contact" class="privacy-link">개인정보처리방침</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="company-info">
+          <p>상호명: 주식회사 이엔에스일렉트릭 (E&amp;S ELECTRIC CO., LTD.) | 대표번호: 고객지원센터 문의</p>
+          <p class="copyright">© 2026 E&amp;S ELECTRIC CO., LTD. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

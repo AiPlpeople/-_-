@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All in one ESS | ESS&amp;태양광 - (주)이엔에스일렉트릭</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Header / GNB -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand-logo" aria-label="이엔에스일렉트릭 홈">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 3L23.5 14.5L34 9L26.5 18.5L37 20L26.5 21.5L34 31L23.5 25.5L20 37L16.5 25.5L6 31L13.5 21.5L3 20L13.5 18.5L6 9L16.5 14.5L20 3Z" fill="url(#logoGrad)"/>
+            <path d="M14 12V28M14 20H25" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="3" y1="3" x2="37" y2="37" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00A3FF"/>
+                <stop offset="1" stop-color="#0055B3"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-corp">(주)</span>이엔에스일렉트릭
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./ceo.html" class="nav-link">회사소개</a>
+            <div class="dropdown-menu">
+              <a href="./ceo.html">인사말</a>
+              <a href="./history.html">연혁</a>
+              <a href="./certifications.html">기술력 및 인증서</a>
+              <a href="./clients.html">주요고객사</a>
+              <a href="./welfare.html">복리후생</a>
+              <a href="./locations.html">사업장소개</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./esg.html" class="nav-link">ESG경영</a>
+            <div class="dropdown-menu">
+              <a href="./esg.html">ESG 경영</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./biz-switchgear.html" class="nav-link active">사업분야</a>
+            <div class="dropdown-menu has-flyout">
+              <div class="dropdown-item-wrap">
+                <a href="./biz-switchgear.html">수배전반</a>
+                <div class="flyout-menu">
+                  <a href="./biz-sw-smart.html">스마트 안전 배전반</a>
+                  <a href="./biz-sw-25kv.html">25.8kV 폐쇄배전반</a>
+                  <a href="./biz-sw-7kv.html">7.2kV 폐쇄배전반</a>
+                  <a href="./biz-sw-480v.html">480V 저압배전반</a>
+                  <a href="./biz-sw-mcc.html">전동기제어반 (일반 MCC)</a>
+                  <a href="./biz-sw-imcc.html">전동기제어반 (Intelligent MCC)</a>
+                  <a href="./biz-sw-panel.html">분전반</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-gis.html">가스절연개폐장치</a>
+                <div class="flyout-menu">
+                  <a href="./biz-gis-25egis.html">25.8kV EGIS (한전용)</a>
+                  <a href="./biz-gis-ecgis.html">25.8kV EC-GIS (민/관수용)</a>
+                  <a href="./biz-gis-29egis.html">29kV EGIS (철도용)</a>
+                  <a href="./biz-gis-ugswitch.html">에폭시절연 지중용부하개폐기</a>
+                  <a href="./biz-gis-ohswitch.html">에폭시절연 가공용부하개폐기</a>
+                  <a href="./biz-gis-recloser.html">리클로저</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-railway.html">철도용관제</a>
+                <div class="flyout-menu">
+                  <a href="./biz-rail-smart.html">스마트급전 시스템</a>
+                  <a href="./biz-rail-panel.html">전철제어반</a>
+                  <a href="./biz-rail-cu.html">CU</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-busduct.html">부스닥트</a>
+                <div class="flyout-menu">
+                  <a href="./biz-bus-hv.html">고압부스닥트</a>
+                  <a href="./biz-bus-lv.html">저압부스닥트</a>
+                  <a href="./biz-bus-dc.html">DC부스닥트</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-ess.html" class="active">ESS&amp;태양광</a>
+                <div class="flyout-menu">
+                  <a href="./biz-ess-allinone.html" class="active">All in one ESS</a>
+                  <a href="./biz-ess-emeg.html">EMEG (PV통합발전 솔루션)</a>
+                  <a href="./biz-ess-monitoring.html">ESS Monitoring Service</a>
+                  <a href="./biz-ess-epms.html">ePMS (EMS+PMS)</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-system.html">시스템솔루션</a>
+                <div class="flyout-menu">
+                  <a href="./biz-sys-temp.html">무선 온도감시 시스템</a>
+                  <a href="./biz-sys-remote.html">열화감시 원격모니터링 시스템</a>
+                  <a href="./biz-sys-enclosure.html">함체관리 시스템</a>
+                </div>
+              </div>
+              <div class="dropdown-item-wrap">
+                <a href="./biz-construction.html">전기/정보통신공사업</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./rnd-institute.html" class="nav-link">R&amp;D분야</a>
+            <div class="dropdown-menu">
+              <a href="./rnd-institute.html">기업부설연구소</a>
+              <a href="./rnd-patents.html">보유 인증 및 특허</a>
+              <a href="./rnd-tech.html">핵심 전력기술</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#support" class="nav-link">고객지원</a>
+            <div class="dropdown-menu">
+              <a href="./index.html#support">견적 및 기술문의</a>
+              <a href="./index.html#support">카탈로그·자료실</a>
+              <a href="./index.html#support">A/S 접수</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#pr" class="nav-link">미디어센터</a>
+            <div class="dropdown-menu">
+              <a href="./index.html#pr">기업소식</a>
+              <a href="./index.html#pr">주요 납품실적</a>
+              <a href="./index.html#pr">PR 영상·브로슈어</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="언어 선택">
+          <button type="button" class="lang-btn active">KR</button>
+          <span class="divider">/</span>
+          <button type="button" class="lang-btn">EN</button>
+        </div>
+        <a href="./index.html#support" class="btn btn-primary btn-sm">견적·기술문의</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Hero Visual -->
+  <section class="sub-hero">
+    <div class="sub-hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow-orb orb-1"></div>
+    </div>
+    <div class="container sub-hero-content">
+      <span class="sub-eyebrow">BUSINESS PORTFOLIO · 05 · 01</span>
+      <h1 class="sub-title">ESS&amp;태양광 ▶ All in one ESS</h1>
+      <p class="sub-desc">태양광 발전(PV) EPC부터 고안전 에너지저장장치(ESS) 및 지능형 통합 관제까지 탄소중립 그린 에너지를 실현합니다.</p>
+    </div>
+
+    <div class="sub-lnb">
+      <div class="container sub-lnb-inner">
+        <div class="breadcrumb">
+          <a href="./index.html" class="breadcrumb-home">⌂ 홈</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>사업분야</span>
+          <span class="breadcrumb-sep">/</span>
+          <a href="./biz-ess.html">ESS&amp;태양광</a>
+          <span class="breadcrumb-sep">/</span>
+          <strong>All in one ESS</strong>
+        </div>
+        <div class="sub-tabs">
+          <a href="./biz-switchgear.html" class="sub-tab">수배전반</a>
+          <a href="./biz-gis.html" class="sub-tab">가스절연개폐장치</a>
+          <a href="./biz-railway.html" class="sub-tab">철도용관제</a>
+          <a href="./biz-busduct.html" class="sub-tab">부스닥트</a>
+          <a href="./biz-ess.html" class="sub-tab active">ESS&amp;태양광</a>
+          <a href="./biz-system.html" class="sub-tab">시스템솔루션</a>
+          <a href="./biz-construction.html" class="sub-tab">전기/정보통신공사업</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="sub-main">
+    <div class="container">
+      <!-- 2nd-Depth Detailed Subpage Navigation Bar -->
+      <div class="biz-subdetail-nav" aria-label="ESS&amp;태양광 세부 품목 메뉴">
+        <a href="./biz-ess.html" class="biz-subdetail-pill">ESS&amp;태양광 전체</a>
+        <a href="./biz-ess-allinone.html" class="biz-subdetail-pill active">All in one ESS</a>
+        <a href="./biz-ess-emeg.html" class="biz-subdetail-pill">EMEG (PV통합발전 솔루션)</a>
+        <a href="./biz-ess-monitoring.html" class="biz-subdetail-pill">ESS Monitoring Service</a>
+        <a href="./biz-ess-epms.html" class="biz-subdetail-pill">ePMS (EMS+PMS)</a>
+      </div>
+
+      <div class="ceo-lead-banner">
+        <div>
+          <span class="section-eyebrow">ALL-IN-ONE ENERGY STORAGE SYSTEM</span>
+          <h2 class="ceo-headline">
+            배터리·PCS·공조·화재안전 설비를 하나로 통합한<br /><span>All in one ESS</span>
+          </h2>
+          <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.8;">
+            고효율 리튬이온 배터리, 전력변환장치(PCS), 에너지관리시스템(EMS), 항온항습 공조 설비 및 다중 화재 예방·소화 시스템을 단일 패키지(컨테이너/캐비닛)로 제작하여 현장 설치 기간을 단축하고 최고 수준의 안전성을 구현한 올인원 에너지저장장치입니다.
+          </p>
+        </div>
+        <div class="ceo-emblem-card">
+          <div class="emblem-icon">🔋</div>
+          <div class="emblem-title">일체형 고안전 ESS 패키지</div>
+          <div class="emblem-sub">Turn-Key All-in-One ESS Solution</div>
+        </div>
+      </div>
+
+      <!-- Key Features -->
+      <div class="welfare-grid" style="margin-bottom: 64px;">
+        <div class="welfare-card">
+          <div class="welfare-icon">🔥</div>
+          <span class="welfare-cat">MULTI-LAYER FIRE SAFETY</span>
+          <h3>열폭주 전이 차단 및 다중 화재 안전 시스템</h3>
+          <ul class="welfare-list">
+            <li>배터리 오프가스(Off-gas)·연기·불꽃·온도 복합 조기 감지 센서 내장</li>
+            <li>모듈 단위 직분사 소화약제 및 수계 소화 설비 연동으로 열폭주 완벽 제어</li>
+            <li>배터리실과 전력변환실(PCS) 내화 격벽 분리 및 폭발 압력 배출구(Vent) 적용</li>
+          </ul>
+        </div>
+        <div class="welfare-card">
+          <div class="welfare-icon">📦</div>
+          <span class="welfare-cat">PLUG &amp; PLAY PACKAGE</span>
+          <h3>공장 사전 조립·검증으로 신속한 현장 구축</h3>
+          <ul class="welfare-list">
+            <li>컨테이너형(대용량) 및 옥외 캐비닛형(중소용량) 올인원 패키지 라인업</li>
+            <li>공장 출하 전 통합 시운전(FAT) 완료로 현장 설치 및 계통 연계 기간 대폭 단축</li>
+            <li>정밀 항온항습 공조 설계로 내부 온도 편차를 최소화하여 배터리 수명 연장</li>
+          </ul>
+        </div>
+        <div class="welfare-card">
+          <div class="welfare-icon">💰</div>
+          <span class="welfare-cat">PEAK SHAVING &amp; RE100</span>
+          <h3>전력 피크 저감 및 신재생 출력 안정화</h3>
+          <ul class="welfare-list">
+            <li>경부하 시간대 충전·최대부하 시간대 방전으로 산업용 기본요금 및 전력비 절감</li>
+            <li>태양광·풍력 발전과 연계하여 출력 변동성 완화 및 계통 안정화 기여</li>
+            <li>정전 발생 시 중요 부하로 즉시 전원을 공급하는 비상전원(UPS) 기능 지원</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Technical Specifications -->
+      <div class="partner-section">
+        <div class="partner-section-head">
+          <div>
+            <span class="partner-badge">SPECIFICATIONS &amp; APPLICATIONS</span>
+            <h3>All in one ESS 주요 사양 및 적용 분야</h3>
+          </div>
+          <p>엄격한 국가·국제 표준 규격과 공인 시험을 통과한 고신뢰 사양을 제공합니다.</p>
+        </div>
+        <div class="partner-grid">
+          <div class="partner-logo-box"><strong>구성 방식</strong><span>배터리 + PCS + BMS/EMS + 공조 + 자동소화 일체형</span></div>
+          <div class="partner-logo-box"><strong>패키지 타입</strong><span>옥외형 캐비닛 (수백 kWh) / 컨테이너형 (MWh급 대용량)</span></div>
+          <div class="partner-logo-box"><strong>안전 규격</strong><span>전기안전공사(KESCO) 및 NFPC 화재안전 기준 완벽 충족</span></div>
+          <div class="partner-logo-box"><strong>적용 분야</strong><span>공장 피크저감 · 공공기관 의무설치 · 태양광 연계 · 마이크로그리드</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="./index.html" class="brand-logo">
+            <span class="logo-text"><span class="logo-corp">(주)</span>이엔에스일렉트릭</span>
+          </a>
+          <p class="footer-slogan">기술과 품질로 신뢰받는 스마트 전력·에너지 토탈 솔루션 파트너</p>
+        </div>
+        <div class="footer-sitemap">
+          <div class="sitemap-col">
+            <h4>회사소개</h4>
+            <ul>
+              <li><a href="./ceo.html">인사말</a></li>
+              <li><a href="./history.html">연혁</a></li>
+              <li><a href="./certifications.html">기술력 및 인증서</a></li>
+              <li><a href="./clients.html">주요고객사</a></li>
+              <li><a href="./welfare.html">복리후생</a></li>
+              <li><a href="./locations.html">사업장소개</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-col">
+            <h4>ESG경영</h4>
+            <ul>
+              <li><a href="./esg.html">ESG 경영</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-col">
+            <h4>사업분야</h4>
+            <ul>
+              <li><a href="./biz-switchgear.html">수배전반</a></li>
+              <li><a href="./biz-gis.html">가스절연개폐장치</a></li>
+              <li><a href="./biz-railway.html">철도용관제</a></li>
+              <li><a href="./biz-busduct.html">부스닥트</a></li>
+              <li><a href="./biz-ess.html">ESS&amp;태양광</a></li>
+              <li><a href="./biz-system.html">시스템솔루션</a></li>
+              <li><a href="./biz-construction.html">전기/정보통신공사업</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-col">
+            <h4>R&amp;D분야</h4>
+            <ul>
+              <li><a href="./rnd-institute.html">기업부설연구소</a></li>
+              <li><a href="./rnd-patents.html">보유 인증 및 특허</a></li>
+              <li><a href="./rnd-tech.html">핵심 전력기술</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="company-legal">
+          <p><strong>(주)이엔에스일렉트릭</strong> | 본사·공장: 경기도 화성시 양감면은행나무로 194번길 27 | 대표전화: 031-352-8570 | 팩스: 031-352-8575</p>
+          <p class="copyright">Copyright © E&amp;S ELECTRIC CO., LTD. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
